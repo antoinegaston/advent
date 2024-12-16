@@ -1,0 +1,33 @@
+{
+  // Global settings
+  "editor.codeActionsOnSave": {
+    "source.organizeImports": "explicit",
+    "source.fixAll": "explicit"
+  },
+  "editor.formatOnPaste": false,
+  "editor.formatOnSave": true,
+
+  // Backend settings, require vscode extensions: ruff
+  "[python]": {
+    "editor.defaultFormatter": "charliermarsh.ruff"
+  },
+  "files.exclude": {
+    "**/__pycache__": true,
+    "**/.pytest_cache": true,
+    "**/.ruff_cache": true,
+  },
+
+  // Frontend settings, require vscode extensions: prettier, rescript
+  "html.format.wrapLineLength": 80,
+  "[rescript]": {
+    "editor.defaultFormatter": "chenglou92.rescript-vscode"
+  },
+  "prettier.singleQuote": true,
+  "prettier.requireConfig": true,
+  "prettier.printWidth": 100,
+  "prettier.semi": false,
+  "files.insertFinalNewline": true,
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+  }
+}
